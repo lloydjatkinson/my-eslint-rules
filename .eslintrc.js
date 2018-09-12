@@ -22,7 +22,7 @@ module.exports = {
         'no-mixed-spaces-and-tabs': 2,
         'no-multiple-empty-lines': [2, { 'max': 2 }],
         'object-curly-spacing': [2, 'always',{ 'arraysInObjects': true, 'objectsInObjects': true }],
-        'semi': [2,'always'],
+        'semi': [2, 'always'],
         'space-before-function-paren': 2,
         'spaced-comment': [2, 'always' , {}],
         'arrow-spacing': [2, { 'before': true, 'after': true }],
