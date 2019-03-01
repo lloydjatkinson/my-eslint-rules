@@ -18,20 +18,31 @@ module.exports = {
         // 'eol-last': ['error', 'never'],
         'indent': 2,  // This actually means "warning = 1, error = 2". Enforce 4 space indentation.
         'key-spacing': [2, { 'afterColon': true }],
-        'newline-after-var': 2,
+        'padding-line-between-statements': 2,
         'no-mixed-spaces-and-tabs': 2,
         'no-multiple-empty-lines': [2, { 'max': 2 }],
         'object-curly-spacing': [2, 'always',{ 'arraysInObjects': true, 'objectsInObjects': true }],
-        'semi': [2, 'always'],
+        'semi': [2,'always'],
         'space-before-function-paren': 2,
         'spaced-comment': [2, 'always' , {}],
         'arrow-spacing': [2, { 'before': true, 'after': true }],
         'constructor-super': 2,
         'no-const-assign': 2,
         'no-var': 2,
-        'prefer-const': 2
+        'prefer-const': 2,
+
+        'vue/html-indent': ['error', 4, {
+            'attribute': 1,
+            'closeBracket': 0,
+            'alignAttributesVertically': true,
+            'ignores': []
+        }],
+        'vue/html-closing-bracket-newline': ['error', {
+            'singleline': 'never',
+            'multiline': 'never'
+        }]
     },
     parserOptions: {
         parser: 'babel-eslint'
-    }
+    },
 };
